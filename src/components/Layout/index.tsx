@@ -35,13 +35,13 @@ const items: MenuItem[] = [
     label: "Ordens de Serviço",
     path: "/ordem-de-servico",
   },
-  { key: "3", icon: <CalendarOutlined />, label: "Agenda", path: "/agenda" },
   {
-    key: "4",
+    key: "3",
     icon: <DollarOutlined />,
     label: "Financeiro",
     path: "/financeiro",
   },
+  { key: "4", icon: <CalendarOutlined />, label: "Agenda", path: "/agenda" },
 ];
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
