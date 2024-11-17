@@ -12,8 +12,8 @@ import TextArea from "antd/es/input/TextArea";
 import { useEffect, useState } from "react";
 import locale from "antd/es/date-picker/locale/pt_BR";
 
-const APIClient = `https://eletro-ar-admin-test-87989372b32e.herokuapp.com/api/clients`;
-const APIServiceOrder = `https://eletro-ar-admin-test-87989372b32e.herokuapp.com/api/service-orders`;
+const APIClient = `http://3.129.68.84/api/clients`;
+const APIServiceOrder = `http://3.129.68.84/api/service-orders`;
 
 interface AddressType {
   id: string;

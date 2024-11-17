@@ -10,7 +10,7 @@ import "moment/dist/locale/pt-br";
 
 const { Search } = Input;
 
-const API = `https://eletro-ar-admin-test-87989372b32e.herokuapp.com/api/service-orders`;
+const API = `http://3.129.68.84/api/service-orders`;
 
 interface AddressType {
   id: string;

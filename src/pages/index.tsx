@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import LayoutLogin from "../components/LayoutLogin";
 import { Button, Form, type FormProps, Input, message } from "antd";
 
-const API = `https://eletro-ar-admin-test-87989372b32e.herokuapp.com/api/login`;
+const API = `http://3.129.68.84/api/login`;
 
 interface DataType {
   email?: string;

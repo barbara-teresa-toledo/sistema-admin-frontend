@@ -3,8 +3,8 @@ import { Card, Col, Row, Statistic } from "antd";
 import Layout from "../../components/Layout";
 import { useEffect, useState } from "react";
 
-const APIServiceOrder = `https://eletro-ar-admin-test-87989372b32e.herokuapp.com/api/service-orders`;
-const APIClients = `https://eletro-ar-admin-test-87989372b32e.herokuapp.com/api/clients`;
+const APIServiceOrder = `http://3.129.68.84/api/service-orders`;
+const APIClients = `http://3.129.68.84/api/clients`;
 
 const Home = () => {
   const [totalOS, setTotalOS] = useState(0);

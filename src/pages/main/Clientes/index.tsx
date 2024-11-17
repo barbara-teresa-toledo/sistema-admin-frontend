@@ -7,7 +7,7 @@ import ClientModal from "../../../components/ModalClient";
 
 const { Search } = Input;
 
-const API = `https://eletro-ar-admin-test-87989372b32e.herokuapp.com/api/clients`;
+const API = `http://3.129.68.84/api/clients`;
 
 interface AddressType {
   id: string;
