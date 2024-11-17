@@ -125,6 +125,7 @@ const Financeiro = () => {
             ? parseInt(values.value.toString().replace(",", ".")) * 100
             : parseInt(editingOperation?.value.toString() || "0") * 100,
         id: editingOperation?.id,
+        date: moment(values.date).format("YYYY-MM-DD HH:mm:ss"),
       };
 
       const response = await fetch(`${API}/${editingOperation?.id}`, {
