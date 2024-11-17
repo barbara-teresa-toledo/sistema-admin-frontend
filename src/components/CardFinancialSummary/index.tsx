@@ -9,7 +9,7 @@ interface CardFinancialSummaryProps {
 
 const CardFinancialSummary: React.FC<CardFinancialSummaryProps> = ({ title, icon, content, color }) => (
     <div
-        className={`min-w-48 flex flex-row gap-x-5 items-center text-center justify-center border ${color} p-5 rounded text-black`}
+        className={`min-w-48 flex flex-row gap-x-5 items-center text-center justify-center border ${color} p-5 rounded `}
     >
         <div className='w-2/3 text-left'>
             <h2 className='font-medium'>{title}</h2>
