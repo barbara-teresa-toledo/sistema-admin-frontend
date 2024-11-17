@@ -1,4 +1,12 @@
-import { Button, Cascader, DatePicker, Form, Input, message } from "antd";
+import {
+  Button,
+  Cascader,
+  DatePicker,
+  Form,
+  Input,
+  InputNumber,
+  message,
+} from "antd";
 import locale from "antd/es/date-picker/locale/pt_BR";
 import moment from "moment";
 import Layout from "../../../../components/Layout";
@@ -98,7 +106,32 @@ const CadastrarNovo = () => {
             className="w-1/3"
             aria-label="Valor da operação"
           >
-            <Input prefix="R$ " aria-required="true"/>
+            <InputNumber
+              aria-required="true"
+              style={{ width: "100%" }}
+              min={0}
+              step={0.01}
+              formatter={(value) =>
+                value
+                  ? `R$ ${Number(value)
+                      .toLocaleString("pt-BR", {
+                        style: "currency",
+                        currency: "BRL",
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })
+                      .replace("R$", "")
+                      .trim()}`
+                  : ""
+              }
+              parser={(value) =>
+                value
+                  ? parseFloat(
+                      value.replace(/\D/g, "").replace(",", ".") || "0"
+                    ) / 100
+                  : 0
+              }
+            />
           </Form.Item>
         </div>
 
